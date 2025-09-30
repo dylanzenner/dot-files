@@ -84,8 +84,6 @@ install_kubectl(){
   fi
 }
 
-#install_docker(){}
-
 install_kind(){
   if ! command -v kind > /dev/null; then
     download_kind
@@ -105,5 +103,4 @@ install_kind(){
 install_golang
 install_kubectl
 install_helm
-#install_docker
 install_kind
